@@ -1,0 +1,77 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    }
+    
+    img {
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    }
+    
+    th, td {
+    border: 1px solid rgb(0, 0, 0);
+    text-align: left;
+    padding: 1px;
+    }
+    
+    tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+    }
+    .corpo{
+    display: flex;
+    }
+    .Informações{
+    flex: 50%;
+    background-image: url("./imagens/fundo_2.jpg");
+    padding: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: rgb(3, 214, 168);
+    }
+    .Informações_2{
+    flex: 50%;
+    background-color: rgb(1, 78, 104);
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 20px;
+    }
+    .titulo_1{
+    text-align:center;
+    background-color: rgb(211, 211, 211);
+    border: 1px solid black;
+    color: rgb(0, 0, 0)
+    }
+    .titulo_2{
+    background-color: rgb(211, 211, 211);
+    border: 1px solid black;
+    color: rgb(0, 0, 0)
+    }
+    .titulo_3{
+    background-color: rgb(211, 211, 211);
+    border: 1px solid black;
+    color: rgb(0, 0, 0)
+    }
+    .titulo_4{
+    text-align:center;
+    color: red;
+    }
+    .link_1{
+    background-color: rgb(211, 211, 211);
+    border: 1px solid black;
+    color: #b11f8c
+    }
+    .link_2{
+    background-color: rgb(211, 211, 211);
+    border: 1px solid black;
+    color: #b11f8c
+    }
+    .email{
+    background-color: rgb(211, 211, 211);
+    border: 1px solid black;
+    color: #b11f8c
+    }
+    .linha_1{
+      color: rgb(255, 0, 0);
+      background-color: black;
+    }

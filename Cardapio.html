@@ -1,0 +1,106 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+  
+      <title>Pagina HTML</title>
+       <link rel="stylesheet" href="styles.css">
+    </head>
+  <body>
+  
+      <img src="./imagens/Expresso-Delivery_e382a70e1103ab3e04de020118130ec6.png" alt="pizza" width="600" height="300">
+  
+  <table>
+    
+    <tr>
+      <th class="linha_1">Sabores</th>
+      <th class="linha_1">Ingredientes</th>
+      <th class="linha_1">Preço</th>
+    </tr>
+    <tr>
+      <td bgcolor="#e02130">Frango com Bancon</td>
+      <td bgcolor="#f88f89">Frango,bancon,milho,ervilha,mussarela,requeijão</td>
+      <td bgcolor="#79c3aa">R$ 25,00</td>
+    </tr>
+    <tr>
+      <td bgcolor="#fab243">Carne de Sol</td>
+      <td bgcolor="#eec276">Carne de sol,bancon,milho,cheddar,mussarela</td>
+      <td bgcolor="#fbf6d0">R$ 25,00</td>
+    </tr>
+    <tr>
+      <td bgcolor="#e02130">Calabresa</td>
+      <td bgcolor="#f88f89">Calabresa,milho,ervilha,cheddar,requeijão</td>
+      <td bgcolor="#79c3aa">R$ 20,00</td>
+    </tr>
+    <tr>
+      <td bgcolor="#fab24">Carne Moida</td>
+      <td bgcolor="#eec276">Frango,Bancon,milho,ervilha,cheddar,mussarela</td>
+      <td bgcolor="#fbf6d0">R$ 25,00</td>
+    </tr>
+    <tr>
+     <td bgcolor="#e02130">Quatro Queijos</td>
+     <td bgcolor="#f88f89">Queijo prato,milho,ervilha.Queijo mussarela,queijo cheddar</td>
+      <td bgcolor="#79c3aa">R$ 30,00</td>
+    </tr>
+    <tr>
+      <td bgcolor="#fab24">Camarão</td>
+      <td bgcolor="#eec276">Camarão,Leite de coco,cheddar,mussarela,ervilha</td>
+      <td bgcolor="#fbf6d0">R$ 30,00</td>
+    </tr>
+    <tr>
+     <td bgcolor="#e02130">Portuguesa</td>
+     <td bgcolor="#f88f89">mussarela,ervilha,presunto,Calabresa,ovo,bancon,tomate</td>
+      <td bgcolor="#79c3aa">R$ 30,00</td>
+    </tr>
+    
+  </table>
+  
+   <h2 style="text-align:center;">Coloque o sabor escolhido:</h2>
+  
+    <form action="/action_page.php">
+      <label for="pizza">Sabor da Pizza:</label>
+        <select id="pizza" name="pizza">
+        <option value="Frango com Bancon">Frango com Bancon</option>
+        <option value="Carne de Sol">Carne de Sol</option>
+        <option value="Calabresa" selected>Calabresa</option>
+        <option value="Carne Moida">Carne Moida</option>
+        <option value="Quatro Queijo">Quatro Queijo</option>
+        <option value="Camarão">Camarão</option>
+        <option value="Portuguesa">Portuguesa</option>
+        </select>
+  </form>
+  
+      <form action="/action_page.php">
+      <fieldset>
+        <legend>Quem ira receber o pedido? e onde sera entregue a pizza?</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <label for="entrega">Local de entrega:</label><br>
+        <input type="text" id="Entrega" name="Entrega" value=""><br><br>
+        </fieldset>
+      </form>
+  
+      <h2>Pedido detalhado:</h2>
+      <p>Caso queira adaptações sobre o pedido ou pedir algo que esteja fora do nosso menu.</p>
+  
+      <form action="/action_page.php">
+        <textarea name="message" rows="10" cols="30"></textarea>
+        <br>
+      </form>
+  
+      <h2>O quão voce gostou do nosso serviço?</h2>
+  
+      <p>Como estava seu pedido? e como voce qualificaria nossa entrega?</p>
+  
+        <form action="/action_page.php"
+          oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          Ruim
+          <input type="range" id="a" name="a">
+          Otimo
+  
+          <br><br>
+          <input type="submit">
+        </form>
+    </body>
+  </html>
